@@ -1,10 +1,14 @@
-angular.module('myApp', ['ngRoute'])
+var app = angular.module('myApp', ['ngRoute'])
 
-.config(function($routeProvider,$locationProvider){
-       $routeProvider
-        .when('/', {
-        templateUrl: 'home.html',
+  app.config(function($routeProvider,$locationProvider){
+     $routeProvider
+      .when('/', {
+        templateUrl: 'partials/home.html',
         controller: 'HomeController'
+      })
+      .when('/service', {
+        templateUrl: 'partials/service.html',
+        controller: 'ServiceController',
+      })
+    $locationProvider.html5Mode(true);
   })
-  $locationProvider.html5Mode(true);
-})

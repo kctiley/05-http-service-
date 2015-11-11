@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
-<head>
-  <title>HTTP Service</title>
-  <base href="/">
-</head>
-<body>
-  <div ng-view></div>
-
-  <script type="text/javascript"></script>
-</body>
-</html>
 
 <!doctype html>
 <html lang="en" ng-app='myApp'>
 <head>
-  <div ng-view></div>
+  <title>HTTP Service</title>
+  <base href="/">
   <meta charset="UTF-8">
-  <title>Angular Boilerplate</title>
-  <!-- styles -->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="./css/main.css" rel="stylesheet" media="screen">
 </head>
   <body>
-    <div class="container">
+    
       <div ng-controller="myController" ng-model="initialText">
         <h1>Say something</h1>
         <br>
@@ -30,7 +17,10 @@
         <p>{{ greeting }}</p>
       <!-- add content here -->
       </div>
-    </div>
+   
+    <div ng-view></div>
+    
+
     <!-- scripts -->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
