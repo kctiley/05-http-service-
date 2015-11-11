@@ -6,9 +6,10 @@ var app = angular.module('myApp', ['ngRoute'])
         templateUrl: 'partials/home.html',
         controller: 'HomeController'
       })
+      $routeProvider
       .when('/service', {
         templateUrl: 'partials/service.html',
-        controller: 'ServiceController',
+        controller: 'ServiceController'
       })
     $locationProvider.html5Mode(true);
   })

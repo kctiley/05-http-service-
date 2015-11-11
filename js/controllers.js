@@ -7,12 +7,11 @@ app.controller('HomeController', function($scope) {
   $scope.homeMessage = "Home!";
 });
 
-app.controller('ServiceController', function($scope, $http) {
+app.controller('ServiceController', function($scope) {
   console.log('test1')
 
   $http.get('https://api.github.com/zen').then(function(data){
-  console.log('test2')
-
+    console.log('test2')
     $scope.zenData = data;
   });
 });
