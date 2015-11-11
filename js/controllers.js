@@ -14,4 +14,5 @@ app.controller('ServiceController', function($scope, $http) {
   console.log('test2')
 
     $scope.zenData = data;
+  });
 });
